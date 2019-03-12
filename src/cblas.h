@@ -24,9 +24,9 @@ extern "C" {            /* Assume C declarations for C++ */
 
   typedef CBLAS_LAYOUT CBLAS_ORDER; /* this for backward compatibility with CBLAS_ORDER */
 
-#include "cblas_mangling.h"
+//#include "cblas_mangling.h"
 
-  /*
+/*
 * ===========================================================================
 * Prototypes for level 1 BLAS functions (complex are recast as routines)
 * ===========================================================================
@@ -581,7 +581,7 @@ extern "C" {            /* Assume C declarations for C++ */
                     void *C, const int ldc);
 
   void cblas_xerbla(int p, const char *rout, const char *form, ...);
-
+  
 #ifdef __cplusplus
 }
 #endif
