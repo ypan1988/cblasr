@@ -23,7 +23,8 @@ void cblas_zgerc(const CBLAS_LAYOUT layout, const int M, const int N,
    #define F77_lda lda
 #endif
 
-   int n, i, tincy, incy=incY;
+   //int n, i, tincy, incy=incY;
+   int n, i, tincy;
    double *y=(double *)Y, *yy=(double *)Y, *ty, *st;
 
    extern int CBLAS_CallFromC;
@@ -72,7 +73,7 @@ void cblas_zgerc(const CBLAS_LAYOUT layout, const int M, const int N,
       }
       else y = (double *) Y;
 
-      F77_NAME(zgeru)( &F77_N, &F77_M, alpha, y, &F77_incY, X, &F77_incX, A,
+      F77_NAME(zgeru)( &F77_N, &F77_M, alpha, (const Rcomplex *)y, &F77_incY, X, &F77_incX, A,
                       &F77_lda);
       if(Y!=y)
          free(y);

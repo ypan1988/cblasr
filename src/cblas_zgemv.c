@@ -31,7 +31,8 @@ void cblas_zgemv(const CBLAS_LAYOUT layout,
    #define F77_incY incY
 #endif
 
-   int n, i=0, incx=incX;
+   //int n, i=0, incx=incX;
+   int n, i=0;
    const double *xx= (double *)X, *alp= (double *)alpha, *bet = (double *)beta;
    double ALPHA[2],BETA[2];
    int tincY, tincx;
@@ -137,10 +138,10 @@ void cblas_zgemv(const CBLAS_LAYOUT layout,
          F77_TA = C2F_CHAR(&TA);
       #endif
       if (TransA == CblasConjTrans)
-         F77_NAME(zgemv)(F77_TA, &F77_N, &F77_M, ALPHA, A, &F77_lda, x,
-                &F77_incX, BETA, Y, &F77_incY);
+         F77_NAME(zgemv)(F77_TA, &F77_N, &F77_M, (const Rcomplex *)ALPHA, A, &F77_lda, (const Rcomplex *)x,
+                &F77_incX, (const Rcomplex *)BETA, Y, &F77_incY);
       else
-         F77_NAME(zgemv)(F77_TA, &F77_N, &F77_M, alpha, A, &F77_lda, x,
+         F77_NAME(zgemv)(F77_TA, &F77_N, &F77_M, alpha, A, &F77_lda, (const Rcomplex *)x,
                 &F77_incX, beta, Y, &F77_incY);
 
       if (TransA == CblasConjTrans)

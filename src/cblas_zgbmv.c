@@ -34,7 +34,8 @@ void cblas_zgbmv(const CBLAS_LAYOUT layout,
    #define F77_incX incx
    #define F77_incY incY
 #endif
-   int n, i=0, incx=incX;
+   //int n, i=0, incx=incX;
+   int n, i=0;
    const double *xx= (double *)X, *alp= (double *)alpha, *bet = (double *)beta;
    double ALPHA[2],BETA[2];
    int tincY, tincx;
