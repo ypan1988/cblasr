@@ -2,6 +2,7 @@
 #include <ctype.h>
 #include "cblas.h"
 //#include "cblas_f77.h"
+#include <R.h>
 
 #define XerblaStrLen 6
 #define XerblaStrLen1 7
@@ -36,7 +37,8 @@ void F77_xerbla(char *srname, void *vinfo)
    }
    else
    {
-      fprintf(stderr, "Parameter %d to routine %s was incorrect\n",
-              *info, srname);
+      //fprintf(stderr, "Parameter %d to routine %s was incorrect\n",
+      //        *info, srname);
+     REprintf("Parameter %d to routine %s was incorrect\n", *info, srname);
    }
 }

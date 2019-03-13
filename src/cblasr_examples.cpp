@@ -1,7 +1,8 @@
 #include <Rcpp.h>
-
 #include "cblas.h"
 
+//'@title Example: Matrix multiplication using cblas_dgemm
+//'@description Matrix multiplication using cblas_dgemm
 //'@example
 //'example_cblas_dgemm()
 //'Expected output:

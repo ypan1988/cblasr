@@ -4,6 +4,7 @@
 #include <stdarg.h>
 #include "cblas.h"
 //#include "cblas_f77.h"
+#include <R.h>
 
 extern    
 #ifdef F77_CHAR
@@ -66,10 +67,12 @@ void cblas_xerbla(int info, const char *rout, const char *form, ...)
       }
    }
    if (info)
-      fprintf(stderr, "Parameter %d to routine %s was incorrect\n", info, rout);
-   vfprintf(stderr, form, argptr);
+      //fprintf(stderr, "Parameter %d to routine %s was incorrect\n", info, rout);
+      REprintf("Parameter %d to routine %s was incorrect\n", info, rout);
+   //vfprintf(stderr, form, argptr);
+   REprintf(form, argptr);
    va_end(argptr);
    if (info && !info)
       F77_xerbla(empty, &info); /* Force link of our F77 error handler */
-   exit(-1);
+   //exit(-1);
 }
