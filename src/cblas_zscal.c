@@ -6,16 +6,14 @@
  * Written by Keita Teranishi.  2/11/1998
  *
  */
-#include "cblas.h"
 #include <R_ext/BLAS.h>
-void cblas_zscal( const int N, const void *alpha, void *X,
-                       const int incX)
-{
+#include "cblas.h"
+void cblas_zscal(const int N, const void *alpha, void *X, const int incX) {
 #ifdef F77_INT
-   F77_INT F77_N=N, F77_incX=incX;
+  F77_INT F77_N = N, F77_incX = incX;
 #else
-   #define F77_N N
-   #define F77_incX incX
+#define F77_N N
+#define F77_incX incX
 #endif
-   F77_NAME(zscal)( &F77_N, alpha, X, &F77_incX);
+  F77_NAME(zscal)(&F77_N, alpha, X, &F77_incX);
 }

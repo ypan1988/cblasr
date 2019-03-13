@@ -7,13 +7,12 @@
  * Written by Keita Teranishi.  2/11/1998
  *
  */
-#include "cblas.h"
 #include <R_ext/BLAS.h>
-double cblas_dasum( const int N, const double *X, const int incX)
-{
+#include "cblas.h"
+double cblas_dasum(const int N, const double *X, const int incX) {
   double asum;
 #ifdef F77_INT
-  F77_INT F77_N=N, F77_incX=incX;
+  F77_INT F77_N = N, F77_incX = incX;
 #else
 #define F77_N N
 #define F77_incX incX
