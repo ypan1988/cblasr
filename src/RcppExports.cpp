@@ -5,19 +5,18 @@
 
 using namespace Rcpp;
 
-// rcpp_hello
-List rcpp_hello();
-RcppExport SEXP _cblasr_rcpp_hello() {
+// example_cblas_dgemm
+void example_cblas_dgemm();
+RcppExport SEXP _cblasr_example_cblas_dgemm() {
 BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcpp_hello());
-    return rcpp_result_gen;
+    example_cblas_dgemm();
+    return R_NilValue;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_cblasr_rcpp_hello", (DL_FUNC) &_cblasr_rcpp_hello, 0},
+    {"_cblasr_example_cblas_dgemm", (DL_FUNC) &_cblasr_example_cblas_dgemm, 0},
     {NULL, NULL, 0}
 };
 
