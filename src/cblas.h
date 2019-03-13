@@ -581,7 +581,9 @@ extern "C" {            /* Assume C declarations for C++ */
                     void *C, const int ldc);
 
   void cblas_xerbla(int p, const char *rout, const char *form, ...);
-  
+
+#define F77_INT int
+
 #ifdef __cplusplus
 }
 #endif
