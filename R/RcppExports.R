@@ -3,13 +3,13 @@
 
 #'@title Example: Matrix multiplication using cblas_dgemm
 #'@description Matrix multiplication using cblas_dgemm
-#'@example
+#'@examples
+#'## Expected output:
+#'## [ 367.76, 368.12
+#'##   674.06, 674.72 ]
 #'example_cblas_dgemm()
-#'Expected output:
-#'[ 367.76, 368.12
-#'  674.06, 674.72 ]
 #'@export
 example_cblas_dgemm <- function() {
-    invisible(.Call(`_cblasr_example_cblas_dgemm`))
+    invisible(.Call('_cblasr_example_cblas_dgemm', PACKAGE = 'cblasr'))
 }
 

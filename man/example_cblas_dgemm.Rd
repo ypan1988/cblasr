@@ -9,3 +9,9 @@ example_cblas_dgemm()
 \description{
 Matrix multiplication using cblas_dgemm
 }
+\examples{
+## Expected output:
+## [ 367.76, 368.12
+##   674.06, 674.72 ]
+example_cblas_dgemm()
+}
