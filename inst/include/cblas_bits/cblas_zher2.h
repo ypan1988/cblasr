@@ -11,9 +11,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-void cblas_zher2(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo, const int N,
-                 const void *alpha, const void *X, const int incX,
-                 const void *Y, const int incY, void *A, const int lda) {
+
+inline void cblas_zher2(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
+                        const int N, const void *alpha, const void *X,
+                        const int incX, const void *Y, const int incY, void *A,
+                        const int lda) {
   char UL;
 #ifdef F77_CHAR
   F77_CHAR F77_UL;

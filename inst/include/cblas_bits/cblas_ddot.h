@@ -11,8 +11,8 @@
 #ifndef CBLAS_DDOT_H_
 #define CBLAS_DDOT_H_
 
-double cblas_ddot(const int N, const double *X, const int incX, const double *Y,
-                  const int incY) {
+inline double cblas_ddot(const int N, const double *X, const int incX,
+                         const double *Y, const int incY) {
   double dot;
 #ifdef F77_INT
   F77_INT F77_N = N, F77_incX = incX, F77_incY = incY;

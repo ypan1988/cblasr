@@ -11,8 +11,8 @@
 #ifndef CBLAS_ZDOTU_SUB_H_
 #define CBLAS_ZDOTU_SUB_H_
 
-void cblas_zdotu_sub(const int N, const void *X, const int incX, const void *Y,
-                     const int incY, void *dotu) {
+inline void cblas_zdotu_sub(const int N, const void *X, const int incX,
+                            const void *Y, const int incY, void *dotu) {
 #ifdef F77_INT
   F77_INT F77_N = N, F77_incX = incX, F77_incY = incY;
 #else

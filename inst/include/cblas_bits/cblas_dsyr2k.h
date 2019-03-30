@@ -10,11 +10,11 @@
 #ifndef CBLAS_DSYR2K_H_
 #define CBLAS_DSYR2K_H_
 
-void cblas_dsyr2k(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
-                  const CBLAS_TRANSPOSE Trans, const int N, const int K,
-                  const double alpha, const double *A, const int lda,
-                  const double *B, const int ldb, const double beta, double *C,
-                  const int ldc) {
+inline void cblas_dsyr2k(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
+                         const CBLAS_TRANSPOSE Trans, const int N, const int K,
+                         const double alpha, const double *A, const int lda,
+                         const double *B, const int ldb, const double beta,
+                         double *C, const int ldc) {
   char UL, TR;
 #ifdef F77_CHAR
   F77_CHAR F77_TA, F77_UL;

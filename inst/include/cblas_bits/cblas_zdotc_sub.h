@@ -11,8 +11,8 @@
 #ifndef CBLAS_ZDOTC_SUB_H_
 #define CBLAS_ZDOTC_SUB_H_
 
-void cblas_zdotc_sub(const int N, const void *X, const int incX, const void *Y,
-                     const int incY, void *dotc) {
+inline void cblas_zdotc_sub(const int N, const void *X, const int incX,
+                            const void *Y, const int incY, void *dotc) {
 #ifdef F77_INT
   F77_INT F77_N = N, F77_incX = incX, F77_incY = incY;
 #else

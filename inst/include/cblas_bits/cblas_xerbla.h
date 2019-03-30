@@ -18,7 +18,7 @@ extern
     F77_xerbla(char *srname, void *vinfo);
 #endif
 
-void cblas_xerbla(int info, const char *rout, const char *form, ...) {
+inline void cblas_xerbla(int info, const char *rout, const char *form, ...) {
   extern int RowMajorStrg;
   char empty[1] = "";
   va_list argptr;

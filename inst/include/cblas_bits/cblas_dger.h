@@ -10,9 +10,10 @@
 #ifndef CBLAS_DGER_H_
 #define CBLAS_DGER_H_
 
-void cblas_dger(const CBLAS_LAYOUT layout, const int M, const int N,
-                const double alpha, const double *X, const int incX,
-                const double *Y, const int incY, double *A, const int lda) {
+inline void cblas_dger(const CBLAS_LAYOUT layout, const int M, const int N,
+                       const double alpha, const double *X, const int incX,
+                       const double *Y, const int incY, double *A,
+                       const int lda) {
 #ifdef F77_INT
   F77_INT F77_M = M, F77_N = N, F77_lda = lda, F77_incX = incX, F77_incY = incY;
 #else

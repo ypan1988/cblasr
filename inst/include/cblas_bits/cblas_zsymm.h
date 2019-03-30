@@ -10,10 +10,11 @@
 #ifndef CBLAS_ZSYMM_H_
 #define CBLAS_ZSYMM_H_
 
-void cblas_zsymm(const CBLAS_LAYOUT layout, const CBLAS_SIDE Side,
-                 const CBLAS_UPLO Uplo, const int M, const int N,
-                 const void *alpha, const void *A, const int lda, const void *B,
-                 const int ldb, const void *beta, void *C, const int ldc) {
+inline void cblas_zsymm(const CBLAS_LAYOUT layout, const CBLAS_SIDE Side,
+                        const CBLAS_UPLO Uplo, const int M, const int N,
+                        const void *alpha, const void *A, const int lda,
+                        const void *B, const int ldb, const void *beta, void *C,
+                        const int ldc) {
   char SD, UL;
 #ifdef F77_CHAR
   F77_CHAR F77_SD, F77_UL;

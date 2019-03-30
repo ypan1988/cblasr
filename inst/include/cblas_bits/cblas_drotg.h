@@ -10,7 +10,7 @@
 #ifndef CBLAS_DROTG_H_
 #define CBLAS_DROTG_H_
 
-void cblas_drotg(double *a, double *b, double *c, double *s) {
+inline void cblas_drotg(double *a, double *b, double *c, double *s) {
   F77_NAME(drotg)(a, b, c, s);
 }
 

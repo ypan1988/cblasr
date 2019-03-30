@@ -9,10 +9,10 @@
 #ifndef CBLAS_ZTBSV_H_
 #define CBLAS_ZTBSV_H_
 
-void cblas_ztbsv(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
-                 const CBLAS_TRANSPOSE TransA, const CBLAS_DIAG Diag,
-                 const int N, const int K, const void *A, const int lda,
-                 void *X, const int incX) {
+inline void cblas_ztbsv(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
+                        const CBLAS_TRANSPOSE TransA, const CBLAS_DIAG Diag,
+                        const int N, const int K, const void *A, const int lda,
+                        void *X, const int incX) {
   char TA;
   char UL;
   char DI;

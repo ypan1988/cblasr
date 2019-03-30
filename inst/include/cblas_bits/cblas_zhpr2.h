@@ -12,9 +12,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void cblas_zhpr2(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo, const int N,
-                 const void *alpha, const void *X, const int incX,
-                 const void *Y, const int incY, void *Ap)
+inline void cblas_zhpr2(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
+                        const int N, const void *alpha, const void *X,
+                        const int incX, const void *Y, const int incY, void *Ap)
 
 {
   char UL;

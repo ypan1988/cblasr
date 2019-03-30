@@ -3,6 +3,9 @@
 
 #include <stddef.h>
 
+#include <R.h>
+#include <R_ext/BLAS.h>
+
 #ifdef __cplusplus
 extern "C" { /* Assume C declarations for C++ */
 #endif       /* __cplusplus */
@@ -30,9 +33,6 @@ typedef CBLAS_LAYOUT
     CBLAS_ORDER; /* this for backward compatibility with CBLAS_ORDER */
 
 #define F77_INT int
-
-#include <R.h>
-#include <R_ext/BLAS.h>
 
 #include "cblas_bits/cblas_globals.h"
 #include "cblas_bits/cblas_xerbla.h"

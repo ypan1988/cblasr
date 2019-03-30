@@ -10,7 +10,8 @@
 #ifndef CBLAS_ZDSCAL_H_
 #define CBLAS_ZDSCAL_H_
 
-void cblas_zdscal(const int N, const double alpha, void *X, const int incX) {
+inline void cblas_zdscal(const int N, const double alpha, void *X,
+                         const int incX) {
 #ifdef F77_INT
   F77_INT F77_N = N, F77_incX = incX;
 #else

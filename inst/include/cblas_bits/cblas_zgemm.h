@@ -10,11 +10,11 @@
 #ifndef CBLAS_ZGEMM_H_
 #define CBLAS_ZGEMM_H_
 
-void cblas_zgemm(const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE TransA,
-                 const CBLAS_TRANSPOSE TransB, const int M, const int N,
-                 const int K, const void *alpha, const void *A, const int lda,
-                 const void *B, const int ldb, const void *beta, void *C,
-                 const int ldc) {
+inline void cblas_zgemm(const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE TransA,
+                        const CBLAS_TRANSPOSE TransB, const int M, const int N,
+                        const int K, const void *alpha, const void *A,
+                        const int lda, const void *B, const int ldb,
+                        const void *beta, void *C, const int ldc) {
   char TA, TB;
 #ifdef F77_CHAR
   F77_CHAR F77_TA, F77_TB;

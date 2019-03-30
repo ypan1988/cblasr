@@ -10,11 +10,11 @@
 #ifndef CBLAS_DTRSM_H_
 #define CBLAS_DTRSM_H_
 
-void cblas_dtrsm(const CBLAS_LAYOUT layout, const CBLAS_SIDE Side,
-                 const CBLAS_UPLO Uplo, const CBLAS_TRANSPOSE TransA,
-                 const CBLAS_DIAG Diag, const int M, const int N,
-                 const double alpha, const double *A, const int lda, double *B,
-                 const int ldb)
+inline void cblas_dtrsm(const CBLAS_LAYOUT layout, const CBLAS_SIDE Side,
+                        const CBLAS_UPLO Uplo, const CBLAS_TRANSPOSE TransA,
+                        const CBLAS_DIAG Diag, const int M, const int N,
+                        const double alpha, const double *A, const int lda,
+                        double *B, const int ldb)
 
 {
   char UL, TA, SD, DI;

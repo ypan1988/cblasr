@@ -11,7 +11,7 @@
 #ifndef CBLAS_IDAMAX_H_
 #define CBLAS_IDAMAX_H_
 
-CBLAS_INDEX cblas_idamax(const int N, const double *X, const int incX) {
+inline CBLAS_INDEX cblas_idamax(const int N, const double *X, const int incX) {
   CBLAS_INDEX iamax;
 #ifdef F77_INT
   F77_INT F77_N = N, F77_incX = incX;

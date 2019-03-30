@@ -10,10 +10,10 @@
 #ifndef CBLAS_ZHERK_H_
 #define CBLAS_ZHERK_H_
 
-void cblas_zherk(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
-                 const CBLAS_TRANSPOSE Trans, const int N, const int K,
-                 const double alpha, const void *A, const int lda,
-                 const double beta, void *C, const int ldc) {
+inline void cblas_zherk(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
+                        const CBLAS_TRANSPOSE Trans, const int N, const int K,
+                        const double alpha, const void *A, const int lda,
+                        const double beta, void *C, const int ldc) {
   char UL, TR;
 #ifdef F77_CHAR
   F77_CHAR F77_TR, F77_UL;

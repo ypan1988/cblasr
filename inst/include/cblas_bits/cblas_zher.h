@@ -12,9 +12,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void cblas_zher(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo, const int N,
-                const double alpha, const void *X, const int incX, void *A,
-                const int lda) {
+inline void cblas_zher(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
+                       const int N, const double alpha, const void *X,
+                       const int incX, void *A, const int lda) {
   char UL;
 #ifdef F77_CHAR
   F77_CHAR F77_UL;

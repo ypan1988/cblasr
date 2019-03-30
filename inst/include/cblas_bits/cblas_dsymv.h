@@ -10,10 +10,10 @@
 #ifndef CBLAS_DSYMV_H_
 #define CBLAS_DSYMV_H_
 
-void cblas_dsymv(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo, const int N,
-                 const double alpha, const double *A, const int lda,
-                 const double *X, const int incX, const double beta, double *Y,
-                 const int incY) {
+inline void cblas_dsymv(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
+                        const int N, const double alpha, const double *A,
+                        const int lda, const double *X, const int incX,
+                        const double beta, double *Y, const int incY) {
   char UL;
 #ifdef F77_CHAR
   F77_CHAR F77_UL;

@@ -9,10 +9,10 @@
 #ifndef CBLAS_DTRSV_H_
 #define CBLAS_DTRSV_H_
 
-void cblas_dtrsv(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
-                 const CBLAS_TRANSPOSE TransA, const CBLAS_DIAG Diag,
-                 const int N, const double *A, const int lda, double *X,
-                 const int incX)
+inline void cblas_dtrsv(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
+                        const CBLAS_TRANSPOSE TransA, const CBLAS_DIAG Diag,
+                        const int N, const double *A, const int lda, double *X,
+                        const int incX)
 
 {
   char TA;

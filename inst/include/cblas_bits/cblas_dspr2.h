@@ -9,9 +9,10 @@
 #ifndef CBLAS_DSPR2_H_
 #define CBLAS_DSPR2_H_
 
-void cblas_dspr2(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo, const int N,
-                 const double alpha, const double *X, const int incX,
-                 const double *Y, const int incY, double *A) {
+inline void cblas_dspr2(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
+                        const int N, const double alpha, const double *X,
+                        const int incX, const double *Y, const int incY,
+                        double *A) {
   char UL;
 #ifdef F77_CHAR
   F77_CHAR F77_UL;

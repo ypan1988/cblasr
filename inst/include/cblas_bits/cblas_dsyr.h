@@ -10,9 +10,9 @@
 #ifndef CBLAS_DSYR_H_
 #define CBLAS_DSYR_H_
 
-void cblas_dsyr(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo, const int N,
-                const double alpha, const double *X, const int incX, double *A,
-                const int lda) {
+inline void cblas_dsyr(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
+                       const int N, const double alpha, const double *X,
+                       const int incX, double *A, const int lda) {
   char UL;
 #ifdef F77_CHAR
   F77_CHAR F77_UL;

@@ -10,8 +10,8 @@
 #ifndef CBLAS_DAXPY_H_
 #define CBLAS_DAXPY_H_
 
-void cblas_daxpy(const int N, const double alpha, const double *X,
-                 const int incX, double *Y, const int incY) {
+inline void cblas_daxpy(const int N, const double alpha, const double *X,
+                        const int incX, double *Y, const int incY) {
 #ifdef F77_INT
   F77_INT F77_N = N, F77_incX = incX, F77_incY = incY;
 #else

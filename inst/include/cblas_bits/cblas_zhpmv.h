@@ -12,9 +12,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void cblas_zhpmv(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo, const int N,
-                 const void *alpha, const void *AP, const void *X,
-                 const int incX, const void *beta, void *Y, const int incY) {
+inline void cblas_zhpmv(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
+                        const int N, const void *alpha, const void *AP,
+                        const void *X, const int incX, const void *beta,
+                        void *Y, const int incY) {
   char UL;
 #ifdef F77_CHAR
   F77_CHAR F77_UL;

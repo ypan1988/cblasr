@@ -1,8 +1,8 @@
 #ifndef CBLAS_DROTM_H_
 #define CBLAS_DROTM_H_
 
-void cblas_drotm(const int N, double *X, const int incX, double *Y,
-                 const int incY, const double *P) {
+inline void cblas_drotm(const int N, double *X, const int incX, double *Y,
+                        const int incY, const double *P) {
 #ifdef F77_INT
   F77_INT F77_N = N, F77_incX = incX, F77_incY = incY;
 #else

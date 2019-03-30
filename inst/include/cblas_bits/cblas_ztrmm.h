@@ -10,11 +10,11 @@
 #ifndef CBLAS_ZTRMM_H_
 #define CBLAS_ZTRMM_H_
 
-void cblas_ztrmm(const CBLAS_LAYOUT layout, const CBLAS_SIDE Side,
-                 const CBLAS_UPLO Uplo, const CBLAS_TRANSPOSE TransA,
-                 const CBLAS_DIAG Diag, const int M, const int N,
-                 const void *alpha, const void *A, const int lda, void *B,
-                 const int ldb) {
+inline void cblas_ztrmm(const CBLAS_LAYOUT layout, const CBLAS_SIDE Side,
+                        const CBLAS_UPLO Uplo, const CBLAS_TRANSPOSE TransA,
+                        const CBLAS_DIAG Diag, const int M, const int N,
+                        const void *alpha, const void *A, const int lda,
+                        void *B, const int ldb) {
   char UL, TA, SD, DI;
 #ifdef F77_CHAR
   F77_CHAR F77_TA, F77_UL, F77_SD, F77_DI;

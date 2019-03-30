@@ -10,10 +10,13 @@
 #define XerblaStrLen 6
 #define XerblaStrLen1 7
 
+inline
 #ifdef F77_CHAR
-void F77_xerbla(F77_CHAR F77_srname, void *vinfo)
+    void
+    F77_xerbla(F77_CHAR F77_srname, void *vinfo)
 #else
-void F77_xerbla(char *srname, void *vinfo)
+    void
+    F77_xerbla(char *srname, void *vinfo)
 #endif
 
 {

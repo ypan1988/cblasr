@@ -9,9 +9,9 @@
 #ifndef CBLAS_ZGERU_H_
 #define CBLAS_ZGERU_H_
 
-void cblas_zgeru(const CBLAS_LAYOUT layout, const int M, const int N,
-                 const void *alpha, const void *X, const int incX,
-                 const void *Y, const int incY, void *A, const int lda) {
+inline void cblas_zgeru(const CBLAS_LAYOUT layout, const int M, const int N,
+                        const void *alpha, const void *X, const int incX,
+                        const void *Y, const int incY, void *A, const int lda) {
 #ifdef F77_INT
   F77_INT F77_M = M, F77_N = N, F77_lda = lda, F77_incX = incX, F77_incY = incY;
 #else

@@ -11,7 +11,7 @@
 #ifndef CBLAS_DZASUM_H_
 #define CBLAS_DZASUM_H_
 
-double cblas_dzasum(const int N, const void *X, const int incX) {
+inline double cblas_dzasum(const int N, const void *X, const int incX) {
   double asum;
 #ifdef F77_INT
   F77_INT F77_N = N, F77_incX = incX;

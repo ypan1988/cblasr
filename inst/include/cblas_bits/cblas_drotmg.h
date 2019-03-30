@@ -10,8 +10,8 @@
 #ifndef CBLAS_DROTMG_H_
 #define CBLAS_DROTMG_H_
 
-void cblas_drotmg(double *d1, double *d2, double *b1, const double b2,
-                  double *p) {
+inline void cblas_drotmg(double *d1, double *d2, double *b1, const double b2,
+                         double *p) {
   F77_NAME(drotmg)(d1, d2, b1, &b2, p);
 }
 

@@ -10,11 +10,11 @@
 #ifndef CBLAS_ZHER2K_H_
 #define CBLAS_ZHER2K_H_
 
-void cblas_zher2k(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
-                  const CBLAS_TRANSPOSE Trans, const int N, const int K,
-                  const void *alpha, const void *A, const int lda,
-                  const void *B, const int ldb, const double beta, void *C,
-                  const int ldc) {
+inline void cblas_zher2k(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
+                         const CBLAS_TRANSPOSE Trans, const int N, const int K,
+                         const void *alpha, const void *A, const int lda,
+                         const void *B, const int ldb, const double beta,
+                         void *C, const int ldc) {
   char UL, TR;
 #ifdef F77_CHAR
   F77_CHAR F77_TR, F77_UL;

@@ -10,11 +10,11 @@
 #ifndef CBLAS_DSYMM_H_
 #define CBLAS_DSYMM_H_
 
-void cblas_dsymm(const CBLAS_LAYOUT layout, const CBLAS_SIDE Side,
-                 const CBLAS_UPLO Uplo, const int M, const int N,
-                 const double alpha, const double *A, const int lda,
-                 const double *B, const int ldb, const double beta, double *C,
-                 const int ldc) {
+inline void cblas_dsymm(const CBLAS_LAYOUT layout, const CBLAS_SIDE Side,
+                        const CBLAS_UPLO Uplo, const int M, const int N,
+                        const double alpha, const double *A, const int lda,
+                        const double *B, const int ldb, const double beta,
+                        double *C, const int ldc) {
   char SD, UL;
 #ifdef F77_CHAR
   F77_CHAR F77_SD, F77_UL;

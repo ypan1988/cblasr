@@ -10,8 +10,8 @@
 #ifndef CBLAS_ZCOPY_H_
 #define CBLAS_ZCOPY_H_
 
-void cblas_zcopy(const int N, const void *X, const int incX, void *Y,
-                 const int incY) {
+inline void cblas_zcopy(const int N, const void *X, const int incX, void *Y,
+                        const int incY) {
 #ifdef F77_INT
   F77_INT F77_N = N, F77_incX = incX, F77_incY = incY;
 #else

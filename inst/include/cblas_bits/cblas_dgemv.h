@@ -10,10 +10,11 @@
 #ifndef CBLAS_DGEMV_H_
 #define CBLAS_DGEMV_H_
 
-void cblas_dgemv(const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE TransA,
-                 const int M, const int N, const double alpha, const double *A,
-                 const int lda, const double *X, const int incX,
-                 const double beta, double *Y, const int incY) {
+inline void cblas_dgemv(const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE TransA,
+                        const int M, const int N, const double alpha,
+                        const double *A, const int lda, const double *X,
+                        const int incX, const double beta, double *Y,
+                        const int incY) {
   char TA;
 #ifdef F77_CHAR
   F77_CHAR F77_TA;

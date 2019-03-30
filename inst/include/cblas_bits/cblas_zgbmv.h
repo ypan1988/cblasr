@@ -11,10 +11,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void cblas_zgbmv(const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE TransA,
-                 const int M, const int N, const int KL, const int KU,
-                 const void *alpha, const void *A, const int lda, const void *X,
-                 const int incX, const void *beta, void *Y, const int incY) {
+inline void cblas_zgbmv(const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE TransA,
+                        const int M, const int N, const int KL, const int KU,
+                        const void *alpha, const void *A, const int lda,
+                        const void *X, const int incX, const void *beta,
+                        void *Y, const int incY) {
   char TA;
 #ifdef F77_CHAR
   F77_CHAR F77_TA;

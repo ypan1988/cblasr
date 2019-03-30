@@ -11,7 +11,7 @@
 #ifndef CBLAS_DNRM2_H_
 #define CBLAS_DNRM2_H_
 
-double cblas_dnrm2(const int N, const double *X, const int incX) {
+inline double cblas_dnrm2(const int N, const double *X, const int incX) {
   double nrm2;
 #ifdef F77_INT
   F77_INT F77_N = N, F77_incX = incX;
