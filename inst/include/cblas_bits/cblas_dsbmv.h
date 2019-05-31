@@ -78,3 +78,4 @@ inline void cblas_dsbmv(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
 }
 
 #endif
+

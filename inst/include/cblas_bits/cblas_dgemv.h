@@ -82,3 +82,4 @@ inline void cblas_dgemv(const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE TransA,
 }
 
 #endif
+

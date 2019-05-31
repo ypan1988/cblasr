@@ -24,3 +24,4 @@ inline void cblas_drot(const int N, double *X, const int incX, double *Y,
 }
 
 #endif
+

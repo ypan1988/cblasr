@@ -149,3 +149,4 @@ inline void cblas_zhpr2(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
 }
 
 #endif
+
