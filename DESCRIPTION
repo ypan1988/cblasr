@@ -1,6 +1,6 @@
 Package: cblasr
 Type: Package
-Title: The C Interface to 'BLAS' routines
+Title: The C Interface to 'BLAS' Routines
 Version: 1.0.0
 Author: Yi Pan [aut, cre]
 Maintainer: Yi Pan <ypan1988@gmail.com>
