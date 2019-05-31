@@ -5,9 +5,9 @@ Version: 1.0.0
 Author: Yi Pan [aut, cre]
 Maintainer: Yi Pan <ypan1988@gmail.com>
 Description: Provides the 'cblas.h' header file for R. 'CBLAS'
-    <https: www.netlib.org/blas/cblas.h> is a collection of wrappers that
+    <https://www.netlib.org/blas/cblas.h> is a collection of wrappers that
     provides a C interface to the FORTRAN 'BLAS' library
-    <https: svn.r-project.org/R/trunk/src/include/R_ext/BLAS.h>. Currently only
+    <https://svn.r-project.org/R/trunk/src/include/R_ext/BLAS.h>. Currently only
     the double precision / double complex 'BLAS' routines are supported.
 License: GPL (>= 2)
 Encoding: UTF-8
