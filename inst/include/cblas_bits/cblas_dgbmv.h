@@ -84,4 +84,3 @@ inline void cblas_dgbmv(const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE TransA,
 }
 
 #endif
-

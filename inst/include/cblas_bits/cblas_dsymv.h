@@ -74,4 +74,3 @@ inline void cblas_dsymv(const CBLAS_LAYOUT layout, const CBLAS_UPLO Uplo,
 }
 
 #endif
-

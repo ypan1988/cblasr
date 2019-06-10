@@ -8,19 +8,18 @@ using namespace Rcpp;
 // example_cblas_dgemm
 void example_cblas_dgemm();
 RcppExport SEXP _cblasr_example_cblas_dgemm() {
-BEGIN_RCPP
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    example_cblas_dgemm();
-    return R_NilValue;
-END_RCPP
+  BEGIN_RCPP
+  Rcpp::RNGScope rcpp_rngScope_gen;
+  example_cblas_dgemm();
+  return R_NilValue;
+  END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_cblasr_example_cblas_dgemm", (DL_FUNC) &_cblasr_example_cblas_dgemm, 0},
-    {NULL, NULL, 0}
-};
+    {"_cblasr_example_cblas_dgemm", (DL_FUNC)&_cblasr_example_cblas_dgemm, 0},
+    {NULL, NULL, 0}};
 
 RcppExport void R_init_cblasr(DllInfo *dll) {
-    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
-    R_useDynamicSymbols(dll, FALSE);
+  R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+  R_useDynamicSymbols(dll, FALSE);
 }

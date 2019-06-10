@@ -26,4 +26,3 @@ inline double cblas_ddot(const int N, const double *X, const int incX,
 }
 
 #endif
-

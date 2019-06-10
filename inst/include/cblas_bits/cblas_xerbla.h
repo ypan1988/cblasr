@@ -89,4 +89,3 @@ inline void cblas_xerbla(int info, const char *rout, const char *form, ...) {
 }
 
 #endif
-

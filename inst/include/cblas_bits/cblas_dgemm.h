@@ -117,4 +117,3 @@ inline void cblas_dgemm(const CBLAS_LAYOUT layout, const CBLAS_TRANSPOSE TransA,
 }
 
 #endif
-
