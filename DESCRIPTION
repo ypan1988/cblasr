@@ -11,7 +11,7 @@ Description: Provides the 'cblas.h' header file as C interface to the underlying
     internal 'BLAS' library in R. 'CBLAS' <https://www.netlib.org/blas/cblas.h>
     is a collection of wrappers originally written by Keita Teranishi and
     provides a C interface to the FORTRAN 'BLAS' library
-    <https://https://www.netlib.org/blas/>. Note that as internal 'BLAS' library
+    <https://www.netlib.org/blas/>. Note that as internal 'BLAS' library
     provided by R <https://svn.r-project.org/R/trunk/src/include/R_ext/BLAS.h>
     is used and only the double precision / double complex 'BLAS' routines are
     supported.
